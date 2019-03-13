@@ -35,4 +35,10 @@ public class student {
     public void SetParticipation(int grade){
         participation = grade;
     }
+    public double GetGrade(){
+        return(.35*workHabitGrade + .4*contentGrade +.25*participation);
+    }
+    public void printGrade(){
+        GetGrade();
+    }
 }
